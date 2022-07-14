@@ -109,6 +109,9 @@
 }
 /* RESPONSIVE */
 @media only screen and (max-width: 950px) {
+    #searchbar{
+        margin-right: 2em;
+    }
     #dotd-cards > div{
         width: 40vw !important;
     }
@@ -116,17 +119,30 @@
         width: 25vw !important;
         height: 20% !important;
     }
+    #fc-cards{
+        height: 25vh;
+    }
+    #tcs-cards{
+        height: 25vh;
+        overflow-y: scroll;
+    }
     #tcs-cards > div{
         width: 25vw !important;
     }
+    #htwc-cards{
+        display: flex;
+        flex-direction: column;
+    }
     #htwc-cards > div{
-        width: 25vw !important;
+        width: 70vw !important;
+        text-align: center;
+        margin: auto;
     }
     #htwc-card-text{
-        display: none !important;
+        /* display: none !important; */
     }
     .navbar-brand{
-position: absolute;
+    position: absolute;
     top: 4px;
     left: 90px;
     }
