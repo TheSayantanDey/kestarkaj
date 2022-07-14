@@ -117,7 +117,7 @@
     }
     #fc-cards > div{
         width: 25vw !important;
-        height: 20% !important;
+        height: 10vh !important;
     }
     #fc-cards{
         height: 25vh;
@@ -137,9 +137,6 @@
         width: 70vw !important;
         text-align: center;
         margin: auto;
-    }
-    #htwc-card-text{
-        /* display: none !important; */
     }
     .navbar-brand{
     position: absolute;
