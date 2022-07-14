@@ -42,11 +42,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 40vh;
+    height: 45vh;
     overflow-y: scroll;
 }
 #fc-cards > div{
     margin: 10px 10px;
+    height: 40%;
     transition: 0.5s all;
 }
 #fc-cards > div:hover{
@@ -93,7 +94,7 @@
     justify-content: space-evenly;
 }
 #htwc-cards > div{
-    margin: 10px 0px;
+    margin: 5px 0px;
     transition: 0.5s all;
     background-color: #e2e2e2;
     border: #e2e2e2;
@@ -105,4 +106,50 @@
 #htwc-cards > div > div > h1 , #htwc-cards > div > div > h5 ,#htwc-cards > div > div > p{
     display: inline;
     margin: auto;
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 950px) {
+    #dotd-cards > div{
+        width: 40vw !important;
+    }
+    #fc-cards > div{
+        width: 25vw !important;
+        height: 20% !important;
+    }
+    #tcs-cards > div{
+        width: 25vw !important;
+    }
+    #htwc-cards > div{
+        width: 25vw !important;
+    }
+    #htwc-card-text{
+        display: none !important;
+    }
+    .navbar-brand{
+position: absolute;
+    top: 4px;
+    left: 90px;
+    }
+    #login-btn{
+        position: absolute;
+        top: 6px;
+        right: 10px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    #dotd-cards > div{
+        width: 40vw !important;
+    }
+    #fc-cards > div{
+        width: 20vw !important;
+        height: 20% !important;
+    }
+}
+/* Bootstap modification */
+.navbar-toggler-icon{
+    height: 1.2em;
+    width: 1.2em;
+}
+.navbar-brand{
+    margin-right: 0rem;
 }
