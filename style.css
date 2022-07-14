@@ -46,7 +46,7 @@
     overflow-y: scroll;
 }
 #fc-cards > div{
-    margin: 10px 10px;
+    margin: 2px 2px;
     height: 40%;
     transition: 0.5s all;
 }
@@ -73,7 +73,8 @@
     justify-content: space-evenly;
 }
 #tcs-cards > div{
-    margin: 10px 10px;
+    width: 14.5vw !important;
+    margin: 5px 5px;
     transition: 0.5s all;
 }
 /* HOW TO EARN CASHBACK */
@@ -98,6 +99,7 @@
     transition: 0.5s all;
     background-color: #e2e2e2;
     border: #e2e2e2;
+    text-align: center;
 }
 #htwc-cards > div > div{
     display: flex;
@@ -112,15 +114,28 @@
     #searchbar{
         margin-right: 2em;
     }
+    #dotd-heading > p{
+        width: max-content;
+        margin: auto;
+    }
     #dotd-cards > div{
         width: 40vw !important;
     }
+    #fc-heading {
+        width: max-content;
+        margin: auto;
+    }
     #fc-cards > div{
-        width: 25vw !important;
+        width: 29vw !important;
         height: 10vh !important;
+        margin:5px 0;
     }
     #fc-cards{
         height: 25vh;
+    }
+    #tcs-heading{
+        width: max-content;
+        margin: auto;
     }
     #tcs-cards{
         height: 25vh;
@@ -129,14 +144,27 @@
     #tcs-cards > div{
         width: 25vw !important;
     }
+    #htwc-heading{
+        width: max-content;
+        margin: auto;
+    }
     #htwc-cards{
         display: flex;
         flex-direction: column;
+        /* flex-wrap: nowrap; */
+        height: 30vh;
+        width: 100%;
+        overflow-x: auto;
     }
     #htwc-cards > div{
-        width: 70vw !important;
+
+        /* display: block; */
+        width: 50vw !important;
+        /* content: inherit; */
         text-align: center;
-        margin: auto;
+        /* white-space: nowrap; */
+        /* margin: auto; */
+        /* overflow-x: scroll; */
     }
     .navbar-brand{
     position: absolute;
@@ -153,10 +181,10 @@
     #dotd-cards > div{
         width: 40vw !important;
     }
-    #fc-cards > div{
-        width: 20vw !important;
+    /* #fc-cards > div{
         height: 20% !important;
-    }
+        margin: 15px 0px;
+    } */
 }
 /* Bootstap modification */
 .navbar-toggler-icon{
